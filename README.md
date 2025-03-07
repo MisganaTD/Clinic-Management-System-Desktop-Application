@@ -14,7 +14,7 @@ This system is desktop application developed using VB.NET and SQL.  It aimed to 
     * Patient Appointment  
 4. **Pharmacist** 
     * Dispense drug
-5. **Laboratory’s technician
+5. **Laboratory’s technician**
     * Add Lab result
 6. **Report**
     * Desired report should be generated
