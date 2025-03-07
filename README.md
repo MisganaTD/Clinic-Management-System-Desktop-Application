@@ -2,15 +2,15 @@
 
 This system is desktop application developed using VB.NET and SQL.  It aimed to transform the manual work in to computerized and to improve the efficiency of the company that enable for the storing of digital records.    
 
-##Feature of this system
+## Feature of this system
 *   ** System Administrator
-* Manage the entire application 
+    * Manage the entire application 
 *   ** Receptions
-* Patient registration
+    * Patient registration
 *   ** Physicians 
 * Patient diagnoses  
-* Prescription 
-* Patient Appointment  
+    * Prescription 
+    * Patient Appointment  
 *   ** Pharmacist 
 * Dispense drug
 *   ** Laboratory’s technician
