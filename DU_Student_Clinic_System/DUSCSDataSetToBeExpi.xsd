@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DUSCSDataSetToBeExpi" targetNamespace="http://tempuri.org/DUSCSDataSetToBeExpi.xsd" xmlns:mstns="http://tempuri.org/DUSCSDataSetToBeExpi.xsd" xmlns="http://tempuri.org/DUSCSDataSetToBeExpi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionStringserv" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionStringserv (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionStringserv" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mainstoretblTableAdapter" GeneratorDataComponentClassName="mainstoretblTableAdapter" Name="mainstoretbl" UserDataComponentName="mainstoretblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DUSCSConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[mainstoretbl] WHERE (([stockid] = @Original_stockid) AND ((@IsNull_namehealthfacility = 1 AND [namehealthfacility] IS NULL) OR ([namehealthfacility] = @Original_namehealthfacility)) AND ((@IsNull_productnamestrengthdosageform = 1 AND [productnamestrengthdosageform] IS NULL) OR ([productnamestrengthdosageform] = @Original_productnamestrengthdosageform)) AND ((@IsNull_unitofissue = 1 AND [unitofissue] IS NULL) OR ([unitofissue] = @Original_unitofissue)) AND ((@IsNull_maximumstocklevel = 1 AND [maximumstocklevel] IS NULL) OR ([maximumstocklevel] = @Original_maximumstocklevel)) AND ((@IsNull_emergencyorderpoint = 1 AND [emergencyorderpoint] IS NULL) OR ([emergencyorderpoint] = @Original_emergencyorderpoint)) AND ((@IsNull_averagemonthlyconsumption = 1 AND [averagemonthlyconsumption] IS NULL) OR ([averagemonthlyconsumption] = @Original_averagemonthlyconsumption)) AND ((@IsNull_regdate = 1 AND [regdate] IS NULL) OR ([regdate] = @Original_regdate)) AND ((@IsNull_docnoreceivingorissueing = 1 AND [docnoreceivingorissueing] IS NULL) OR ([docnoreceivingorissueing] = @Original_docnoreceivingorissueing)) AND ((@IsNull_receivedfromorissuedto = 1 AND [receivedfromorissuedto] IS NULL) OR ([receivedfromorissuedto] = @Original_receivedfromorissuedto)) AND ((@IsNull_quantyreceived = 1 AND [quantyreceived] IS NULL) OR ([quantyreceived] = @Original_quantyreceived)) AND ((@IsNull_quantyissued = 1 AND [quantyissued] IS NULL) OR ([quantyissued] = @Original_quantyissued)) AND ((@IsNull_quantylossoradjustment = 1 AND [quantylossoradjustment] IS NULL) OR ([quantylossoradjustment] = @Original_quantylossoradjustment)) AND ((@IsNull_quantybalance = 1 AND [quantybalance] IS NULL) OR ([quantybalance] = @Original_quantybalance)) AND ((@IsNull_apiecevalue = 1 AND [apiecevalue] IS NULL) OR ([apiecevalue] = @Original_apiecevalue)) AND ((@IsNull_balancevalueofpieceandasked = 1 AND [balancevalueofpieceandasked] IS NULL) OR ([balancevalueofpieceandasked] = @Original_balancevalueofpieceandasked)) AND ((@IsNull_batchno = 1 AND [batchno] IS NULL) OR ([batchno] = @Original_batchno)) AND ((@IsNull_expirydate = 1 AND [expirydate] IS NULL) OR ([expirydate] = @Original_expirydate)) AND ((@IsNull_remark = 1 AND [remark] IS NULL) OR ([remark] = @Original_remark)) AND ((@IsNull_regbyempid = 1 AND [regbyempid] IS NULL) OR ([regbyempid] = @Original_regbyempid)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_stockid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_namehealthfacility" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_namehealthfacility" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_productnamestrengthdosageform" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_productnamestrengthdosageform" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_unitofissue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_unitofissue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_maximumstocklevel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_maximumstocklevel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_emergencyorderpoint" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_emergencyorderpoint" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_averagemonthlyconsumption" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_averagemonthlyconsumption" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_regdate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_regdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_docnoreceivingorissueing" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_docnoreceivingorissueing" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_receivedfromorissuedto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_receivedfromorissuedto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantyreceived" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantyreceived" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantyissued" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantyissued" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantylossoradjustment" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantylossoradjustment" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantybalance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantybalance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_apiecevalue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_apiecevalue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_balancevalueofpieceandasked" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_balancevalueofpieceandasked" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_batchno" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_batchno" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_expirydate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_expirydate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_remark" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_remark" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_regbyempid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_regbyempid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[mainstoretbl] ([stockid], [namehealthfacility], [productnamestrengthdosageform], [unitofissue], [maximumstocklevel], [emergencyorderpoint], [averagemonthlyconsumption], [regdate], [docnoreceivingorissueing], [receivedfromorissuedto], [quantyreceived], [quantyissued], [quantylossoradjustment], [quantybalance], [apiecevalue], [balancevalueofpieceandasked], [batchno], [expirydate], [remark], [regbyempid]) VALUES (@stockid, @namehealthfacility, @productnamestrengthdosageform, @unitofissue, @maximumstocklevel, @emergencyorderpoint, @averagemonthlyconsumption, @regdate, @docnoreceivingorissueing, @receivedfromorissuedto, @quantyreceived, @quantyissued, @quantylossoradjustment, @quantybalance, @apiecevalue, @balancevalueofpieceandasked, @batchno, @expirydate, @remark, @regbyempid);
+SELECT stockid, namehealthfacility, productnamestrengthdosageform, unitofissue, maximumstocklevel, emergencyorderpoint, averagemonthlyconsumption, regdate, docnoreceivingorissueing, receivedfromorissuedto, quantyreceived, quantyissued, quantylossoradjustment, quantybalance, apiecevalue, balancevalueofpieceandasked, batchno, expirydate, remark, regbyempid FROM mainstoretbl WHERE (stockid = @stockid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@namehealthfacility" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@productnamestrengthdosageform" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unitofissue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@maximumstocklevel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@emergencyorderpoint" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@averagemonthlyconsumption" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@regdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@docnoreceivingorissueing" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@receivedfromorissuedto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantyreceived" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantyissued" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantylossoradjustment" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantybalance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@apiecevalue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@balancevalueofpieceandasked" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@batchno" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@expirydate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@remark" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@regbyempid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT stockid, namehealthfacility, productnamestrengthdosageform, unitofissue, maximumstocklevel, emergencyorderpoint, averagemonthlyconsumption, regdate, docnoreceivingorissueing, receivedfromorissuedto, quantyreceived, quantyissued, quantylossoradjustment, quantybalance, apiecevalue,balancevalueofpieceandasked,batchno, expirydate, remark, regbyempid FROM dbo.mainstoretbl where cast(getdate() as date) &gt;= (DATEADD(MONTH, -1, expirydate))</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[mainstoretbl] SET [stockid] = @stockid, [namehealthfacility] = @namehealthfacility, [productnamestrengthdosageform] = @productnamestrengthdosageform, [unitofissue] = @unitofissue, [maximumstocklevel] = @maximumstocklevel, [emergencyorderpoint] = @emergencyorderpoint, [averagemonthlyconsumption] = @averagemonthlyconsumption, [regdate] = @regdate, [docnoreceivingorissueing] = @docnoreceivingorissueing, [receivedfromorissuedto] = @receivedfromorissuedto, [quantyreceived] = @quantyreceived, [quantyissued] = @quantyissued, [quantylossoradjustment] = @quantylossoradjustment, [quantybalance] = @quantybalance, [apiecevalue] = @apiecevalue, [balancevalueofpieceandasked] = @balancevalueofpieceandasked, [batchno] = @batchno, [expirydate] = @expirydate, [remark] = @remark, [regbyempid] = @regbyempid WHERE (([stockid] = @Original_stockid) AND ((@IsNull_namehealthfacility = 1 AND [namehealthfacility] IS NULL) OR ([namehealthfacility] = @Original_namehealthfacility)) AND ((@IsNull_productnamestrengthdosageform = 1 AND [productnamestrengthdosageform] IS NULL) OR ([productnamestrengthdosageform] = @Original_productnamestrengthdosageform)) AND ((@IsNull_unitofissue = 1 AND [unitofissue] IS NULL) OR ([unitofissue] = @Original_unitofissue)) AND ((@IsNull_maximumstocklevel = 1 AND [maximumstocklevel] IS NULL) OR ([maximumstocklevel] = @Original_maximumstocklevel)) AND ((@IsNull_emergencyorderpoint = 1 AND [emergencyorderpoint] IS NULL) OR ([emergencyorderpoint] = @Original_emergencyorderpoint)) AND ((@IsNull_averagemonthlyconsumption = 1 AND [averagemonthlyconsumption] IS NULL) OR ([averagemonthlyconsumption] = @Original_averagemonthlyconsumption)) AND ((@IsNull_regdate = 1 AND [regdate] IS NULL) OR ([regdate] = @Original_regdate)) AND ((@IsNull_docnoreceivingorissueing = 1 AND [docnoreceivingorissueing] IS NULL) OR ([docnoreceivingorissueing] = @Original_docnoreceivingorissueing)) AND ((@IsNull_receivedfromorissuedto = 1 AND [receivedfromorissuedto] IS NULL) OR ([receivedfromorissuedto] = @Original_receivedfromorissuedto)) AND ((@IsNull_quantyreceived = 1 AND [quantyreceived] IS NULL) OR ([quantyreceived] = @Original_quantyreceived)) AND ((@IsNull_quantyissued = 1 AND [quantyissued] IS NULL) OR ([quantyissued] = @Original_quantyissued)) AND ((@IsNull_quantylossoradjustment = 1 AND [quantylossoradjustment] IS NULL) OR ([quantylossoradjustment] = @Original_quantylossoradjustment)) AND ((@IsNull_quantybalance = 1 AND [quantybalance] IS NULL) OR ([quantybalance] = @Original_quantybalance)) AND ((@IsNull_apiecevalue = 1 AND [apiecevalue] IS NULL) OR ([apiecevalue] = @Original_apiecevalue)) AND ((@IsNull_balancevalueofpieceandasked = 1 AND [balancevalueofpieceandasked] IS NULL) OR ([balancevalueofpieceandasked] = @Original_balancevalueofpieceandasked)) AND ((@IsNull_batchno = 1 AND [batchno] IS NULL) OR ([batchno] = @Original_batchno)) AND ((@IsNull_expirydate = 1 AND [expirydate] IS NULL) OR ([expirydate] = @Original_expirydate)) AND ((@IsNull_remark = 1 AND [remark] IS NULL) OR ([remark] = @Original_remark)) AND ((@IsNull_regbyempid = 1 AND [regbyempid] IS NULL) OR ([regbyempid] = @Original_regbyempid)));
+SELECT stockid, namehealthfacility, productnamestrengthdosageform, unitofissue, maximumstocklevel, emergencyorderpoint, averagemonthlyconsumption, regdate, docnoreceivingorissueing, receivedfromorissuedto, quantyreceived, quantyissued, quantylossoradjustment, quantybalance, apiecevalue, balancevalueofpieceandasked, batchno, expirydate, remark, regbyempid FROM mainstoretbl WHERE (stockid = @stockid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@namehealthfacility" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@productnamestrengthdosageform" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unitofissue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@maximumstocklevel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@emergencyorderpoint" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@averagemonthlyconsumption" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@regdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@docnoreceivingorissueing" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@receivedfromorissuedto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantyreceived" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantyissued" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantylossoradjustment" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@quantybalance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@apiecevalue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@balancevalueofpieceandasked" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@batchno" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@expirydate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@remark" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@regbyempid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_stockid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_namehealthfacility" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_namehealthfacility" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="namehealthfacility" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_productnamestrengthdosageform" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_productnamestrengthdosageform" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="productnamestrengthdosageform" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_unitofissue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_unitofissue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitofissue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_maximumstocklevel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_maximumstocklevel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="maximumstocklevel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_emergencyorderpoint" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_emergencyorderpoint" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emergencyorderpoint" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_averagemonthlyconsumption" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_averagemonthlyconsumption" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="averagemonthlyconsumption" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_regdate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_regdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regdate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_docnoreceivingorissueing" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_docnoreceivingorissueing" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="docnoreceivingorissueing" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_receivedfromorissuedto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_receivedfromorissuedto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="receivedfromorissuedto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantyreceived" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantyreceived" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyreceived" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantyissued" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantyissued" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantyissued" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantylossoradjustment" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantylossoradjustment" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantylossoradjustment" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_quantybalance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_quantybalance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="quantybalance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_apiecevalue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_apiecevalue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="apiecevalue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_balancevalueofpieceandasked" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_balancevalueofpieceandasked" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="balancevalueofpieceandasked" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_batchno" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_batchno" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="batchno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_expirydate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_expirydate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="expirydate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_remark" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_remark" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="remark" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_regbyempid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_regbyempid" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="regbyempid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stockid" DataSetColumn="stockid" />
+              <Mapping SourceColumn="namehealthfacility" DataSetColumn="namehealthfacility" />
+              <Mapping SourceColumn="productnamestrengthdosageform" DataSetColumn="productnamestrengthdosageform" />
+              <Mapping SourceColumn="unitofissue" DataSetColumn="unitofissue" />
+              <Mapping SourceColumn="maximumstocklevel" DataSetColumn="maximumstocklevel" />
+              <Mapping SourceColumn="emergencyorderpoint" DataSetColumn="emergencyorderpoint" />
+              <Mapping SourceColumn="averagemonthlyconsumption" DataSetColumn="averagemonthlyconsumption" />
+              <Mapping SourceColumn="regdate" DataSetColumn="regdate" />
+              <Mapping SourceColumn="docnoreceivingorissueing" DataSetColumn="docnoreceivingorissueing" />
+              <Mapping SourceColumn="receivedfromorissuedto" DataSetColumn="receivedfromorissuedto" />
+              <Mapping SourceColumn="quantyreceived" DataSetColumn="quantyreceived" />
+              <Mapping SourceColumn="quantyissued" DataSetColumn="quantyissued" />
+              <Mapping SourceColumn="quantylossoradjustment" DataSetColumn="quantylossoradjustment" />
+              <Mapping SourceColumn="quantybalance" DataSetColumn="quantybalance" />
+              <Mapping SourceColumn="batchno" DataSetColumn="batchno" />
+              <Mapping SourceColumn="expirydate" DataSetColumn="expirydate" />
+              <Mapping SourceColumn="remark" DataSetColumn="remark" />
+              <Mapping SourceColumn="regbyempid" DataSetColumn="regbyempid" />
+              <Mapping SourceColumn="apiecevalue" DataSetColumn="apiecevalue" />
+              <Mapping SourceColumn="balancevalueofpieceandasked" DataSetColumn="balancevalueofpieceandasked" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DUSCSDataSetToBeExpi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DUSCSDataSetToBeExpi" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DUSCSDataSetToBeExpi">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mainstoretbl" msprop:Generator_RowClassName="mainstoretblRow" msprop:Generator_RowEvHandlerName="mainstoretblRowChangeEventHandler" msprop:Generator_RowDeletedName="mainstoretblRowDeleted" msprop:Generator_RowDeletingName="mainstoretblRowDeleting" msprop:Generator_RowEvArgName="mainstoretblRowChangeEvent" msprop:Generator_TablePropName="mainstoretbl" msprop:Generator_RowChangedName="mainstoretblRowChanged" msprop:Generator_UserTableName="mainstoretbl" msprop:Generator_RowChangingName="mainstoretblRowChanging" msprop:Generator_TableClassName="mainstoretblDataTable" msprop:Generator_TableVarName="tablemainstoretbl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stockid" msprop:Generator_UserColumnName="stockid" msprop:Generator_ColumnPropNameInTable="stockidColumn" msprop:Generator_ColumnPropNameInRow="stockid" msprop:Generator_ColumnVarNameInTable="columnstockid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="namehealthfacility" msprop:Generator_UserColumnName="namehealthfacility" msprop:Generator_ColumnPropNameInTable="namehealthfacilityColumn" msprop:Generator_ColumnPropNameInRow="namehealthfacility" msprop:Generator_ColumnVarNameInTable="columnnamehealthfacility" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="productnamestrengthdosageform" msprop:Generator_UserColumnName="productnamestrengthdosageform" msprop:Generator_ColumnPropNameInTable="productnamestrengthdosageformColumn" msprop:Generator_ColumnPropNameInRow="productnamestrengthdosageform" msprop:Generator_ColumnVarNameInTable="columnproductnamestrengthdosageform" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unitofissue" msprop:Generator_UserColumnName="unitofissue" msprop:Generator_ColumnPropNameInTable="unitofissueColumn" msprop:Generator_ColumnPropNameInRow="unitofissue" msprop:Generator_ColumnVarNameInTable="columnunitofissue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="maximumstocklevel" msprop:Generator_UserColumnName="maximumstocklevel" msprop:Generator_ColumnPropNameInTable="maximumstocklevelColumn" msprop:Generator_ColumnPropNameInRow="maximumstocklevel" msprop:Generator_ColumnVarNameInTable="columnmaximumstocklevel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emergencyorderpoint" msprop:Generator_UserColumnName="emergencyorderpoint" msprop:Generator_ColumnPropNameInTable="emergencyorderpointColumn" msprop:Generator_ColumnPropNameInRow="emergencyorderpoint" msprop:Generator_ColumnVarNameInTable="columnemergencyorderpoint" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="averagemonthlyconsumption" msprop:Generator_UserColumnName="averagemonthlyconsumption" msprop:Generator_ColumnPropNameInTable="averagemonthlyconsumptionColumn" msprop:Generator_ColumnPropNameInRow="averagemonthlyconsumption" msprop:Generator_ColumnVarNameInTable="columnaveragemonthlyconsumption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="regdate" msprop:Generator_UserColumnName="regdate" msprop:Generator_ColumnPropNameInTable="regdateColumn" msprop:Generator_ColumnPropNameInRow="regdate" msprop:Generator_ColumnVarNameInTable="columnregdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="docnoreceivingorissueing" msprop:Generator_UserColumnName="docnoreceivingorissueing" msprop:Generator_ColumnPropNameInTable="docnoreceivingorissueingColumn" msprop:Generator_ColumnPropNameInRow="docnoreceivingorissueing" msprop:Generator_ColumnVarNameInTable="columndocnoreceivingorissueing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="receivedfromorissuedto" msprop:Generator_UserColumnName="receivedfromorissuedto" msprop:Generator_ColumnPropNameInTable="receivedfromorissuedtoColumn" msprop:Generator_ColumnPropNameInRow="receivedfromorissuedto" msprop:Generator_ColumnVarNameInTable="columnreceivedfromorissuedto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantyreceived" msprop:Generator_UserColumnName="quantyreceived" msprop:Generator_ColumnPropNameInTable="quantyreceivedColumn" msprop:Generator_ColumnPropNameInRow="quantyreceived" msprop:Generator_ColumnVarNameInTable="columnquantyreceived" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantyissued" msprop:Generator_UserColumnName="quantyissued" msprop:Generator_ColumnPropNameInTable="quantyissuedColumn" msprop:Generator_ColumnPropNameInRow="quantyissued" msprop:Generator_ColumnVarNameInTable="columnquantyissued" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantylossoradjustment" msprop:Generator_UserColumnName="quantylossoradjustment" msprop:Generator_ColumnPropNameInTable="quantylossoradjustmentColumn" msprop:Generator_ColumnPropNameInRow="quantylossoradjustment" msprop:Generator_ColumnVarNameInTable="columnquantylossoradjustment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantybalance" msprop:Generator_UserColumnName="quantybalance" msprop:Generator_ColumnPropNameInTable="quantybalanceColumn" msprop:Generator_ColumnPropNameInRow="quantybalance" msprop:Generator_ColumnVarNameInTable="columnquantybalance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="batchno" msprop:Generator_UserColumnName="batchno" msprop:Generator_ColumnPropNameInTable="batchnoColumn" msprop:Generator_ColumnPropNameInRow="batchno" msprop:Generator_ColumnVarNameInTable="columnbatchno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expirydate" msprop:Generator_UserColumnName="expirydate" msprop:Generator_ColumnPropNameInTable="expirydateColumn" msprop:Generator_ColumnPropNameInRow="expirydate" msprop:Generator_ColumnVarNameInTable="columnexpirydate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remark" msprop:Generator_UserColumnName="remark" msprop:Generator_ColumnPropNameInTable="remarkColumn" msprop:Generator_ColumnPropNameInRow="remark" msprop:Generator_ColumnVarNameInTable="columnremark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="regbyempid" msprop:Generator_UserColumnName="regbyempid" msprop:Generator_ColumnPropNameInTable="regbyempidColumn" msprop:Generator_ColumnPropNameInRow="regbyempid" msprop:Generator_ColumnVarNameInTable="columnregbyempid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="apiecevalue" msprop:Generator_UserColumnName="apiecevalue" msprop:Generator_ColumnPropNameInTable="apiecevalueColumn" msprop:Generator_ColumnPropNameInRow="apiecevalue" msprop:Generator_ColumnVarNameInTable="columnapiecevalue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="balancevalueofpieceandasked" msprop:Generator_UserColumnName="balancevalueofpieceandasked" msprop:Generator_ColumnPropNameInTable="balancevalueofpieceandaskedColumn" msprop:Generator_ColumnPropNameInRow="balancevalueofpieceandasked" msprop:Generator_ColumnVarNameInTable="columnbalancevalueofpieceandasked" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mainstoretbl" />
+      <xs:field xpath="mstns:stockid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

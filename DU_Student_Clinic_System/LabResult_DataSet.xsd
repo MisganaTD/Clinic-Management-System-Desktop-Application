@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LabResult_DataSet" targetNamespace="http://tempuri.org/LabResult_DataSet.xsd" xmlns:mstns="http://tempuri.org/LabResult_DataSet.xsd" xmlns="http://tempuri.org/LabResult_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionStringserv" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionStringserv (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionStringserv" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="labresultTableAdapter" GeneratorDataComponentClassName="labresultTableAdapter" Name="labresult" UserDataComponentName="labresultTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DUSCSConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT lr.patientid, ptbl.name, ptbl.gender, ptbl.age, ptbl.idnumber, ptbl.department, ptbl.year, ptbl.branch, lr.bf, lr.otherhema, lr.appearance, lr.microscopy,lr.urinedeepsticktest,lr.rbc,lr.wbc,
+ lr.epithalialcells,lr.hcg,lr.othersurina,lr.hd,lr.od,lr.wellfelix,lr.pregnancytest, lr.reportedby, lr.remarkedby, 
+                         lr.resultdate
+FROM            labresult AS lr INNER JOIN
+                         patienttbl AS ptbl ON lr.patientid = ptbl.patientid order by  lr.resultdate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="patientid" DataSetColumn="patientid" />
+              <Mapping SourceColumn="bf" DataSetColumn="bf" />
+              <Mapping SourceColumn="otherhema" DataSetColumn="otherhema" />
+              <Mapping SourceColumn="appearance" DataSetColumn="appearance" />
+              <Mapping SourceColumn="microscopy" DataSetColumn="microscopy" />
+              <Mapping SourceColumn="urinedeepsticktest" DataSetColumn="urinedeepsticktest" />
+              <Mapping SourceColumn="rbc" DataSetColumn="rbc" />
+              <Mapping SourceColumn="wbc" DataSetColumn="wbc" />
+              <Mapping SourceColumn="epithalialcells" DataSetColumn="epithalialcells" />
+              <Mapping SourceColumn="hcg" DataSetColumn="hcg" />
+              <Mapping SourceColumn="othersurina" DataSetColumn="othersurina" />
+              <Mapping SourceColumn="hd" DataSetColumn="hd" />
+              <Mapping SourceColumn="od" DataSetColumn="od" />
+              <Mapping SourceColumn="wellfelix" DataSetColumn="wellfelix" />
+              <Mapping SourceColumn="pregnancytest" DataSetColumn="pregnancytest" />
+              <Mapping SourceColumn="reportedby" DataSetColumn="reportedby" />
+              <Mapping SourceColumn="remarkedby" DataSetColumn="remarkedby" />
+              <Mapping SourceColumn="resultdate" DataSetColumn="resultdate" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="gender" DataSetColumn="gender" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="idnumber" DataSetColumn="idnumber" />
+              <Mapping SourceColumn="department" DataSetColumn="department" />
+              <Mapping SourceColumn="year" DataSetColumn="year" />
+              <Mapping SourceColumn="branch" DataSetColumn="branch" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LabResult_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LabResult_DataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LabResult_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="labresult" msprop:Generator_RowEvHandlerName="labresultRowChangeEventHandler" msprop:Generator_RowDeletedName="labresultRowDeleted" msprop:Generator_RowDeletingName="labresultRowDeleting" msprop:Generator_RowEvArgName="labresultRowChangeEvent" msprop:Generator_TablePropName="labresult" msprop:Generator_RowChangedName="labresultRowChanged" msprop:Generator_UserTableName="labresult" msprop:Generator_RowChangingName="labresultRowChanging" msprop:Generator_RowClassName="labresultRow" msprop:Generator_TableClassName="labresultDataTable" msprop:Generator_TableVarName="tablelabresult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="patientid" msprop:Generator_UserColumnName="patientid" msprop:Generator_ColumnPropNameInTable="patientidColumn" msprop:Generator_ColumnPropNameInRow="patientid" msprop:Generator_ColumnVarNameInTable="columnpatientid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bf" msprop:Generator_UserColumnName="bf" msprop:Generator_ColumnPropNameInTable="bfColumn" msprop:Generator_ColumnPropNameInRow="bf" msprop:Generator_ColumnVarNameInTable="columnbf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="otherhema" msprop:Generator_UserColumnName="otherhema" msprop:Generator_ColumnPropNameInTable="otherhemaColumn" msprop:Generator_ColumnPropNameInRow="otherhema" msprop:Generator_ColumnVarNameInTable="columnotherhema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="appearance" msprop:Generator_UserColumnName="appearance" msprop:Generator_ColumnPropNameInTable="appearanceColumn" msprop:Generator_ColumnPropNameInRow="appearance" msprop:Generator_ColumnVarNameInTable="columnappearance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="microscopy" msprop:Generator_UserColumnName="microscopy" msprop:Generator_ColumnPropNameInTable="microscopyColumn" msprop:Generator_ColumnPropNameInRow="microscopy" msprop:Generator_ColumnVarNameInTable="columnmicroscopy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="urinedeepsticktest" msprop:Generator_UserColumnName="urinedeepsticktest" msprop:Generator_ColumnPropNameInTable="urinedeepsticktestColumn" msprop:Generator_ColumnPropNameInRow="urinedeepsticktest" msprop:Generator_ColumnVarNameInTable="columnurinedeepsticktest" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rbc" msprop:Generator_UserColumnName="rbc" msprop:Generator_ColumnPropNameInTable="rbcColumn" msprop:Generator_ColumnPropNameInRow="rbc" msprop:Generator_ColumnVarNameInTable="columnrbc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="wbc" msprop:Generator_UserColumnName="wbc" msprop:Generator_ColumnPropNameInTable="wbcColumn" msprop:Generator_ColumnPropNameInRow="wbc" msprop:Generator_ColumnVarNameInTable="columnwbc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="epithalialcells" msprop:Generator_UserColumnName="epithalialcells" msprop:Generator_ColumnPropNameInTable="epithalialcellsColumn" msprop:Generator_ColumnPropNameInRow="epithalialcells" msprop:Generator_ColumnVarNameInTable="columnepithalialcells" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hcg" msprop:Generator_UserColumnName="hcg" msprop:Generator_ColumnPropNameInTable="hcgColumn" msprop:Generator_ColumnPropNameInRow="hcg" msprop:Generator_ColumnVarNameInTable="columnhcg" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="othersurina" msprop:Generator_UserColumnName="othersurina" msprop:Generator_ColumnPropNameInTable="othersurinaColumn" msprop:Generator_ColumnPropNameInRow="othersurina" msprop:Generator_ColumnVarNameInTable="columnothersurina" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hd" msprop:Generator_UserColumnName="hd" msprop:Generator_ColumnPropNameInTable="hdColumn" msprop:Generator_ColumnPropNameInRow="hd" msprop:Generator_ColumnVarNameInTable="columnhd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="od" msprop:Generator_UserColumnName="od" msprop:Generator_ColumnPropNameInTable="odColumn" msprop:Generator_ColumnPropNameInRow="od" msprop:Generator_ColumnVarNameInTable="columnod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="wellfelix" msprop:Generator_UserColumnName="wellfelix" msprop:Generator_ColumnPropNameInTable="wellfelixColumn" msprop:Generator_ColumnPropNameInRow="wellfelix" msprop:Generator_ColumnVarNameInTable="columnwellfelix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pregnancytest" msprop:Generator_UserColumnName="pregnancytest" msprop:Generator_ColumnPropNameInTable="pregnancytestColumn" msprop:Generator_ColumnPropNameInRow="pregnancytest" msprop:Generator_ColumnVarNameInTable="columnpregnancytest" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reportedby" msprop:Generator_UserColumnName="reportedby" msprop:Generator_ColumnPropNameInTable="reportedbyColumn" msprop:Generator_ColumnPropNameInRow="reportedby" msprop:Generator_ColumnVarNameInTable="columnreportedby" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remarkedby" msprop:Generator_UserColumnName="remarkedby" msprop:Generator_ColumnPropNameInTable="remarkedbyColumn" msprop:Generator_ColumnPropNameInRow="remarkedby" msprop:Generator_ColumnVarNameInTable="columnremarkedby" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="resultdate" msprop:Generator_UserColumnName="resultdate" msprop:Generator_ColumnPropNameInTable="resultdateColumn" msprop:Generator_ColumnPropNameInRow="resultdate" msprop:Generator_ColumnVarNameInTable="columnresultdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnVarNameInTable="columnname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msprop:Generator_UserColumnName="gender" msprop:Generator_ColumnPropNameInTable="genderColumn" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnVarNameInTable="columngender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_UserColumnName="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnVarNameInTable="columnage" type="xs:int" minOccurs="0" />
+              <xs:element name="idnumber" msprop:Generator_UserColumnName="idnumber" msprop:Generator_ColumnPropNameInTable="idnumberColumn" msprop:Generator_ColumnPropNameInRow="idnumber" msprop:Generator_ColumnVarNameInTable="columnidnumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="department" msprop:Generator_UserColumnName="department" msprop:Generator_ColumnPropNameInTable="departmentColumn" msprop:Generator_ColumnPropNameInRow="department" msprop:Generator_ColumnVarNameInTable="columndepartment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="225" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="year" msprop:Generator_UserColumnName="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnVarNameInTable="columnyear" type="xs:int" minOccurs="0" />
+              <xs:element name="registrationdate" msprop:Generator_UserColumnName="registrationdate" msprop:Generator_ColumnPropNameInTable="registrationdateColumn" msprop:Generator_ColumnPropNameInRow="registrationdate" msprop:Generator_ColumnVarNameInTable="columnregistrationdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="branch" msprop:Generator_UserColumnName="branch" msprop:Generator_ColumnPropNameInTable="branchColumn" msprop:Generator_ColumnPropNameInRow="branch" msprop:Generator_ColumnVarNameInTable="columnbranch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

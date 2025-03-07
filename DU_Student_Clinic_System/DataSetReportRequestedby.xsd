@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReportRequestedby" targetNamespace="http://tempuri.org/DataSetReportRequestedby.xsd" xmlns:mstns="http://tempuri.org/DataSetReportRequestedby.xsd" xmlns="http://tempuri.org/DataSetReportRequestedby.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DUSCSConnectionStringserv" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DUSCSConnectionStringserv (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinic_System.My.MySettings.GlobalReference.Default.DUSCSConnectionStringserv" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="pharmstoretblTableAdapter" GeneratorDataComponentClassName="pharmstoretblTableAdapter" Name="pharmstoretbl" UserDataComponentName="pharmstoretblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DUSCSConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT reqid, items, unit, quantity, availablebalance, branch, itemstatus, requesteddate, dispenseddate, requestedbyempid, proceededbyempid, dispenserid, remark FROM pharmstoretbl WHERE (itemstatus = 'gained')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="items" DataSetColumn="items" />
+              <Mapping SourceColumn="unit" DataSetColumn="unit" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="availablebalance" DataSetColumn="availablebalance" />
+              <Mapping SourceColumn="branch" DataSetColumn="branch" />
+              <Mapping SourceColumn="requestedbyempid" DataSetColumn="requestedbyempid" />
+              <Mapping SourceColumn="proceededbyempid" DataSetColumn="proceededbyempid" />
+              <Mapping SourceColumn="remark" DataSetColumn="remark" />
+              <Mapping SourceColumn="itemstatus" DataSetColumn="itemstatus" />
+              <Mapping SourceColumn="requesteddate" DataSetColumn="requesteddate" />
+              <Mapping SourceColumn="dispenserid" DataSetColumn="dispenserid" />
+              <Mapping SourceColumn="dispenseddate" DataSetColumn="dispenseddate" />
+              <Mapping SourceColumn="reqid" DataSetColumn="reqid" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReportRequestedby" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetReportRequestedby" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSetReportRequestedby">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="pharmstoretbl" msprop:Generator_RowClassName="pharmstoretblRow" msprop:Generator_RowEvHandlerName="pharmstoretblRowChangeEventHandler" msprop:Generator_RowDeletedName="pharmstoretblRowDeleted" msprop:Generator_RowDeletingName="pharmstoretblRowDeleting" msprop:Generator_RowEvArgName="pharmstoretblRowChangeEvent" msprop:Generator_TablePropName="pharmstoretbl" msprop:Generator_RowChangedName="pharmstoretblRowChanged" msprop:Generator_UserTableName="pharmstoretbl" msprop:Generator_RowChangingName="pharmstoretblRowChanging" msprop:Generator_TableClassName="pharmstoretblDataTable" msprop:Generator_TableVarName="tablepharmstoretbl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="items" msprop:Generator_UserColumnName="items" msprop:Generator_ColumnPropNameInTable="itemsColumn" msprop:Generator_ColumnPropNameInRow="items" msprop:Generator_ColumnVarNameInTable="columnitems" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit" msprop:Generator_UserColumnName="unit" msprop:Generator_ColumnPropNameInTable="unitColumn" msprop:Generator_ColumnPropNameInRow="unit" msprop:Generator_ColumnVarNameInTable="columnunit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_UserColumnName="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="availablebalance" msprop:Generator_UserColumnName="availablebalance" msprop:Generator_ColumnPropNameInTable="availablebalanceColumn" msprop:Generator_ColumnPropNameInRow="availablebalance" msprop:Generator_ColumnVarNameInTable="columnavailablebalance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="branch" msprop:Generator_UserColumnName="branch" msprop:Generator_ColumnPropNameInTable="branchColumn" msprop:Generator_ColumnPropNameInRow="branch" msprop:Generator_ColumnVarNameInTable="columnbranch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="requestedbyempid" msprop:Generator_UserColumnName="requestedbyempid" msprop:Generator_ColumnPropNameInTable="requestedbyempidColumn" msprop:Generator_ColumnPropNameInRow="requestedbyempid" msprop:Generator_ColumnVarNameInTable="columnrequestedbyempid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="proceededbyempid" msprop:Generator_UserColumnName="proceededbyempid" msprop:Generator_ColumnPropNameInTable="proceededbyempidColumn" msprop:Generator_ColumnPropNameInRow="proceededbyempid" msprop:Generator_ColumnVarNameInTable="columnproceededbyempid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remark" msprop:Generator_UserColumnName="remark" msprop:Generator_ColumnPropNameInTable="remarkColumn" msprop:Generator_ColumnPropNameInRow="remark" msprop:Generator_ColumnVarNameInTable="columnremark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemstatus" msprop:Generator_UserColumnName="itemstatus" msprop:Generator_ColumnPropNameInTable="itemstatusColumn" msprop:Generator_ColumnPropNameInRow="itemstatus" msprop:Generator_ColumnVarNameInTable="columnitemstatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="requesteddate" msprop:Generator_UserColumnName="requesteddate" msprop:Generator_ColumnPropNameInTable="requesteddateColumn" msprop:Generator_ColumnPropNameInRow="requesteddate" msprop:Generator_ColumnVarNameInTable="columnrequesteddate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dispenserid" msprop:Generator_UserColumnName="dispenserid" msprop:Generator_ColumnPropNameInTable="dispenseridColumn" msprop:Generator_ColumnPropNameInRow="dispenserid" msprop:Generator_ColumnVarNameInTable="columndispenserid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dispenseddate" msprop:Generator_UserColumnName="dispenseddate" msprop:Generator_ColumnPropNameInTable="dispenseddateColumn" msprop:Generator_ColumnPropNameInRow="dispenseddate" msprop:Generator_ColumnVarNameInTable="columndispenseddate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reqid" msprop:Generator_UserColumnName="reqid" msprop:Generator_ColumnPropNameInTable="reqidColumn" msprop:Generator_ColumnPropNameInRow="reqid" msprop:Generator_ColumnVarNameInTable="columnreqid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:pharmstoretbl" />
+      <xs:field xpath="mstns:reqid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

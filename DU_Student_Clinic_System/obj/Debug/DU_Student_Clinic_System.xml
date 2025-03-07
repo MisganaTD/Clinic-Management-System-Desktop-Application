@@ -1,0 +1,661 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DU_Student_Clinic_System
+</name>
+</assembly>
+<members>
+<member name="T:DU_Student_Clinic_System.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.accounting">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.DU_new_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.dulogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.loading">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.SCS">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.SCSAppln">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.SCSlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.SCSMain">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DU_Student_Clinic_System.My.Resources.Resources.SCSMnlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritbl">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritbl.prescriptiontblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritbl.prescriptiontblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritbl.prescriptiontblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.prescriptiontblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.ConsumedStockItemprecritbl,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.ConsumedStockItemprecritbl,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.ConsumedStockItemprecritbl,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.ConsumedStockItemprecritbl)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ConsumedStockItemprecritblTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyiscians">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyiscians.dispenseryforphysiciantblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyiscians.dispenseryforphysiciantblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyiscians.dispenseryforphysiciantblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.dispenseryforphysiciantblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.DataSetDispenseryPhyiscians,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.DataSetDispenseryPhyiscians,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.DataSetDispenseryPhyiscians,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.DataSetDispenseryPhyiscians)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetDispenseryPhyisciansTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedby">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedby.pharmstoretblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedby.pharmstoretblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedby.pharmstoretblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.pharmstoretblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.DataSetReportRequestedby,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.DataSetReportRequestedby,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.DataSetReportRequestedby,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.DataSetReportRequestedby)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DataSetReportRequestedbyTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_Dataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_Dataset.patientdiagnosistblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_Dataset.patientdiagnosistblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_Dataset.patientdiagnosistblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.patientdiagnosistblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.Diagnosis_Dataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.Diagnosis_Dataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.Diagnosis_Dataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.Diagnosis_Dataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Diagnosis_DatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretbl">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretbl.mainstoretblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretbl.mainstoretblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretbl.mainstoretblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.mainstoretblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.DUSCSDataSetmainstoretbl,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.DUSCSDataSetmainstoretbl,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.DUSCSDataSetmainstoretbl,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.DUSCSDataSetmainstoretbl)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetmainstoretblTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpi">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpi.mainstoretblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpi.mainstoretblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpi.mainstoretblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.mainstoretblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.DUSCSDataSetToBeExpi,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.DUSCSDataSetToBeExpi,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.DUSCSDataSetToBeExpi,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.DUSCSDataSetToBeExpi)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.DUSCSDataSetToBeExpiTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Expiry">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Expiry.mainstoretblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Expiry.mainstoretblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Expiry.mainstoretblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ExpiryTableAdapters.mainstoretblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.Expiry,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.Expiry,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.Expiry,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.Expiry)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.ExpiryTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSet.labresultDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSet.labresultRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSet.labresultRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.labresultTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.LabResult_DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.LabResult_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.LabResult_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.LabResult_DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.LabResult_DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSet.prescriptiontblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSet.prescriptiontblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSet.prescriptiontblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.prescriptiontblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DU_Student_Clinic_System.Pharmcy_DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DU_Student_Clinic_System.Pharmcy_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DU_Student_Clinic_System.Pharmcy_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.UpdateAll(DU_Student_Clinic_System.Pharmcy_DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DU_Student_Clinic_System.Pharmcy_DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
