@@ -6,18 +6,18 @@ This system is desktop application developed using VB.NET and SQL.  It aimed to 
 
 1. **System Administrator**
     * Manage the entire application 
-*   ** Receptions
+2. ** Receptions
     * Patient registration
-*   ** Physicians 
-* Patient diagnoses  
+3. ** Physicians 
+    * Patient diagnoses  
     * Prescription 
     * Patient Appointment  
-*   ** Pharmacist 
-* Dispense drug
-*   ** Laboratory’s technician
-* Add Lab result
-*   ** Report
-* Desired report should be generated
+4. ** Pharmacist 
+    * Dispense drug
+5. ** Laboratory’s technician
+    * Add Lab result
+6. ** Report
+    * Desired report should be generated
   
 ## Technologies Used
 *   **Programming Language:**  VB.NET
